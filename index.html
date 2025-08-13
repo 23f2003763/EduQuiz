@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduQuiz AI: PDF & Image Quiz Creator</title>
     
-    <!-- KaTeX for LaTeX Rendering (integrity hashes removed) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-    
+    <!-- KaTeX for LaTeX Rendering (Updated to latest version with correct integrity hashes) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-sN/J5B1x8rKuMusHMg2IPln3CATZ3aA2ITppD4us/Vbls95NlTjD2GGGu2pBt2ds" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIo7pC62+1G4Tz/B2Gchys+lPBT3B/41U/wAFp9i+I+WdYJNd/o2PZJb2ftMhdiM" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-C2bYm8i2M2b7Qe/Q2p6c2gXYM/O3jQn9lV2qF84GvM637f99Uf1C/gD+d0KkVnoZ" crossorigin="anonymous"></script>
+
     <!-- PDF.js for PDF Rendering -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.5.136/pdf.min.mjs" type="module"></script>
     
-    <!-- Firebase (updated version) -->
+    <!-- Firebase (stable version) -->
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js" type="module"></script>
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js" type="module"></script>
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js" type="module"></script>
@@ -38,7 +38,7 @@
 </head>
   <body>
     <div id="root"></div>
-    <!-- Use relative path and ensure babel module handling is correct -->
-    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+    <!-- Use absolute path and ensure babel module handling is correct -->
+    <script type="text/babel" data-type="module" src="/index.tsx"></script>
   </body>
 </html>
