@@ -13,7 +13,7 @@ import {
 } from './components/icons.tsx';
 import type { Chat } from '@google/genai';
 import { auth, signInWithGoogle } from './firebase.ts';
-import { onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js';
+import { onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js';
 
 
 type ViewMode = 'quiz' | 'solver' | 'strategy' | 'profile';

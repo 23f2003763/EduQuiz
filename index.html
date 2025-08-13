@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduQuiz AI: PDF & Image Quiz Creator</title>
     
-    <!-- KaTeX for LaTeX Rendering (integrity hashes removed to prevent blocking) -->
+    <!-- KaTeX for LaTeX Rendering (integrity hashes removed) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -14,11 +14,11 @@
     <!-- PDF.js for PDF Rendering -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.5.136/pdf.min.mjs" type="module"></script>
     
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js" type="module"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js" type="module"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js" type="module"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js" type="module"></script>
+    <!-- Firebase (updated version) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage.js" type="module"></script>
 
     <!-- Babel for in-browser JSX transpilation -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -30,6 +30,7 @@
     "react/": "https://esm.sh/react@^19.1.1/",
     "react": "https://esm.sh/react@^19.1.1",
     "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react-dom": "https://esm.sh/react-dom@^19.1.1",
     "@google/genai": "https://esm.sh/@google/genai@^1.13.0"
   }
 }
@@ -37,7 +38,7 @@
 </head>
   <body>
     <div id="root"></div>
-    <!-- The `data-type="module"` attribute is the critical fix for the script loading error -->
-    <script type="text/babel" data-type="module" src="/index.tsx"></script>
+    <!-- Use relative path and ensure babel module handling is correct -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
