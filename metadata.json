@@ -1,0 +1,7 @@
+{
+  "name": "EduQuiz AI - ANS ACADEMY",
+  "description": "An intelligent quiz creator that scans educational PDFs or images, understands the content, and generates interactive multiple-choice quizzes with solutions.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
