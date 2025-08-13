@@ -1,5 +1,5 @@
 import React from 'react';
-import { SparklesIcon } from './icons.tsx';
+import { SparklesIcon } from './icons';
 
 interface LoaderProps {
   message: string;

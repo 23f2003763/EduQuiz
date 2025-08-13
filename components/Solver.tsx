@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import type { Chat } from '@google/genai';
-import LatexRenderer from './LatexRenderer.tsx';
-import { SparklesIcon } from './icons.tsx';
+import LatexRenderer from './LatexRenderer';
+import { SparklesIcon } from './icons';
 
 interface SolverProps {
   chat: Chat;
@@ -44,7 +44,6 @@ const Solver: React.FC<SolverProps> = ({ chat, documentImages }) => {
                 ...imageParts,
                 { text: `My first question is: ${currentInput}` }
             ];
-            // Correctly structure the multipart message payload
             responseStream = await chat.sendMessageStream({ message: parts });
             setIsFirstMessage(false);
         } else {

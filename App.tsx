@@ -1,18 +1,18 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import QuizConfigComponent from './components/FileUpload.tsx';
-import Quiz from './components/Quiz.tsx';
-import Results from './components/Results.tsx';
-import Loader from './components/Loader.tsx';
-import Solver from './components/Solver.tsx';
-import { AppState, QuestionType, Exam } from './types.ts';
-import type { QuizQuestion, QuizConfig as QuizConfigType, User, SubjectProgress } from './types.ts';
-import { generateQuizFromContent, createChat } from './services/geminiService.ts';
+import QuizConfigComponent from './components/FileUpload';
+import Quiz from './components/Quiz';
+import Results from './components/Results';
+import Loader from './components/Loader';
+import Solver from './components/Solver';
+import { AppState, QuestionType, Exam } from './types';
+import type { QuizQuestion, QuizConfig as QuizConfigType, User, SubjectProgress } from './types';
+import { generateQuizFromContent, createChat } from './services/geminiService';
 import { 
     BookOpenIcon, ChatBubbleLeftRightIcon, UserCircleIcon, 
     ArrowLeftOnRectangleIcon, PencilSquareIcon, Cog6ToothIcon, ChevronDownIcon 
-} from './components/icons.tsx';
+} from './components/icons';
 import type { Chat } from '@google/genai';
-import { auth, signInWithGoogle, onAuthStateChanged } from './firebase.ts';
+import { auth, signInWithGoogle, onAuthStateChanged } from './firebase';
 
 
 type ViewMode = 'quiz' | 'solver' | 'strategy' | 'profile';

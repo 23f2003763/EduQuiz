@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
-import { UploadIcon, BookOpenIcon, DocumentTextIcon, SettingsIcon, TimerIcon, SparklesIcon } from './icons.tsx';
-import type { QuizConfig } from '../types.ts';
-import { QuestionType, Exam } from '../types.ts';
+import { UploadIcon, BookOpenIcon, DocumentTextIcon, SettingsIcon, TimerIcon, SparklesIcon } from './icons';
+import type { QuizConfig } from '../types';
+import { QuestionType, Exam } from '../types';
 
 interface QuizConfigProps {
   onStartQuizGeneration: (config: QuizConfig, base64Images: string[]) => void;

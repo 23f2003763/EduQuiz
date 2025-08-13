@@ -1,8 +1,8 @@
 import React from 'react';
-import type { QuizQuestion } from '../types.ts';
-import { QuestionType } from '../types.ts';
-import { CheckCircleIcon, XCircleIcon } from './icons.tsx';
-import LatexRenderer from './LatexRenderer.tsx';
+import type { QuizQuestion } from '../types';
+import { QuestionType } from '../types';
+import { CheckCircleIcon, XCircleIcon } from './icons';
+import LatexRenderer from './LatexRenderer';
 
 interface ResultsProps {
   questions: QuizQuestion[];

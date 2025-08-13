@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import type { QuizQuestion } from '../types.ts';
-import { QuestionType } from '../types.ts';
-import LatexRenderer from './LatexRenderer.tsx';
-import { TimerIcon, CheckCircleIcon } from './icons.tsx';
+import type { QuizQuestion } from '../types';
+import { QuestionType } from '../types';
+import LatexRenderer from './LatexRenderer';
+import { TimerIcon, CheckCircleIcon } from './icons';
 
 interface QuizProps {
   questions: QuizQuestion[];
