@@ -12,8 +12,7 @@ import {
     ArrowLeftOnRectangleIcon, PencilSquareIcon, Cog6ToothIcon, ChevronDownIcon 
 } from './components/icons.tsx';
 import type { Chat } from '@google/genai';
-import { auth, signInWithGoogle } from './firebase.ts';
-import { onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js';
+import { auth, signInWithGoogle, onAuthStateChanged } from './firebase.ts';
 
 
 type ViewMode = 'quiz' | 'solver' | 'strategy' | 'profile';

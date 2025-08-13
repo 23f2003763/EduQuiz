@@ -27,3 +27,6 @@ export const googleProvider = new GoogleAuthProvider();
 export const signInWithGoogle = () => {
     return signInWithPopup(auth, googleProvider);
 };
+
+// Re-export other necessary functions so they can be imported from this module
+export { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
